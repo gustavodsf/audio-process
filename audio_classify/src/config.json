@@ -1,0 +1,30 @@
+{   
+    "pre_process":{
+        "speech_path": "../data/speechs/",
+        "music_path": "../data/music/",
+        "segment_duration": 3,
+        "sample_rate": 22050,
+        "num_mfcc": 13,
+        "hop_length": 512,
+        "n_fft": 2048,
+        "output": "processed_data.json",
+        "number_of_threads": 8,
+        "n_mels": 32
+    },
+    "model":{
+        "output": "../model/",
+        "batch_size": 50,
+        "epochs": 50,
+        "test_size": 0.10,
+        "validation_size": 0.3,
+        "learning_rate": 0.0001
+    },
+    "youtube":{
+        "path": "../data/audioset/",
+        "audio_codec": "flac",
+        "audio_container": "flac",
+        "class_file": "class_labels_indices.csv",
+        "samples_list": "balanced_train_segments.csv",
+        "output": "processed_data_yt.json"
+    }
+}

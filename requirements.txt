@@ -1,0 +1,4 @@
+numpy
+matploblib
+ipython
+librosa
